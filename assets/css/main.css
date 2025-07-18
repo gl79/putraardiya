@@ -1,10 +1,3 @@
-/**
-* Template Name: iLanding
-* Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-* Updated: Nov 12 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -2361,6 +2354,111 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    90deg,
+    #add8e6,  /* biru muda */
+    #87cefa,  /* biru langit */
+    #00008b,  /* biru tua */
+    #ffffff,  /* putih */
+    #add8e6   /* biru muda ulang biar loop mulus */
+  );
+  background-size: 400% auto; /* lebih lebar agar transisi lebih lambat dan lembut */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientFlow 12s ease-in-out infinite;
+  font-weight: bold;
+}
+@keyframes gradientFlow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.rgb-animated-text {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red /* ulang biar loop mulus */
+  );
+  background-size: 800% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rgbFlow 15s linear infinite;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@keyframes rgbFlow {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+#typewriter-text::after {
+  content: "|";
+  animation: blink 1s infinite;
+  color: #00008b; /* bisa disesuaikan */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.btn-getstarted {
+  transition: all 0.4s ease;
+}
+
+.btn-getstarted:hover {
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  box-shadow: 0 0 15px rgba(13, 202, 240, 0.6);
+  transform: scale(1.05);
+}
+
+/* Preloader background */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Spinner style */
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top-color: #0d6efd; /* biru Bootstrap */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hilangkan loader saat selesai */
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /*--------------------------------------------------------------
