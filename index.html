@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Putra Ardiya</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description"
+    content="Sewa bus pariwisata profesional untuk perjalanan wisata, ziarah, study tour, dll. Hubungi kami untuk penawaran terbaik.">
+  <meta name="keywords" content="sewa bus, bus pariwisata, rental bus wisata, transportasi wisata">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -32,6 +33,11 @@
 
 <body class="index-page">
 
+  <!-- Loader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div
       class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -47,6 +53,7 @@
         <ul>
           <li><a href="#hero" class="nav-link" data-target="hero">Beranda</a></li>
           <li><a href="#about" class="nav-link" data-target="about">Tentang Kami</a></li>
+          <li><a href="#gallery" class="nav-link" data-target="gallery">Gallery</a></li>
           <li><a href="#features" class="nav-link" data-target="features">Keunggulan</a></li>
           <li><a href="#services" class="nav-link" data-target="services">Layanan</a></li>
         </ul>
@@ -84,7 +91,7 @@
               <!-- Judul Utama -->
               <h1 class="mb-3">
                 Transportasi Wisata <br>
-                <span class="accent-text">Profesional & Nyaman</span>
+                <span class="accent-text" id="typewriter-text"></span>
               </h1>
 
               <!-- Deskripsi -->
@@ -94,7 +101,7 @@
 
               <!-- Tombol -->
               <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Tentang Kami</a>
+                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Pesan Sekarang</a>
                 <a href="https://www.youtube.com/embed/65-dTm_ROkg?start=12&autoplay=1"
                   class="btn btn-link mt-2 mt-sm-0 glightbox" data-glightbox="type: video">
                   <i class="bi bi-play-circle me-1"></i>
@@ -176,6 +183,7 @@
 
       </div>
     </section>
+    <!-- End Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -248,8 +256,79 @@
         </div>
 
       </div>
-
     </section><!-- /About Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section bg-light">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title text-center mb-4">
+          <h2 class="about-title"> Gallery Armada Bus </h2>
+          <p class="about-description">Berikut adalah beberapa dokumentasi armada bus pariwisata kami yang siap menemani
+            perjalanan Anda.</p>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Gallery Item 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <a href="assets/img/gal1.jpeg" class="glightbox" data-gallery="bus-gallery">
+              <img src="assets/img/gal1.jpeg" class="img-fluid rounded-4 shadow-sm" alt="Bus 1">
+            </a>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <a href="assets/img/gal2.jpeg" class="glightbox" data-gallery="bus-gallery">
+              <img src="assets/img/gal2.jpeg" class="img-fluid rounded-4 shadow-sm" alt=" Bus 2">
+            </a>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <a href="assets/img/gal3.jpeg" class="glightbox" data-gallery="bus-gallery">
+              <img src="assets/img/gal3.jpeg" class="img-fluid rounded-4 shadow-sm" alt="Bus 3">
+            </a>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <a href="assets/img/gal4.jpg" class="glightbox" data-gallery="bus-gallery">
+              <img src="assets/img/gal4.jpg" class="img-fluid rounded-4 shadow-sm" alt="Bus 4">
+            </a>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+            <a href="assets/img/gal5.webp" class="glightbox" data-gallery="bus-gallery">
+              <img src="assets/img/gal5.webp" class="img-fluid rounded-4 shadow-sm" alt="Bus 5">
+            </a>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <a href="assets/img/gal6.webp" class="glightbox" data-gallery="bus-gallery">
+              <img src="assets/img/gal6.webp" class="img-fluid rounded-4 shadow-sm" alt="Bus 6">
+            </a>
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <a href="assets/img/gal7.webp" class="glightbox" data-gallery="bus-gallery">
+              <img src="assets/img/gal7.webp" class="img-fluid rounded-4 shadow-sm" alt="Bus 7">
+            </a>
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <a href="assets/img/gal8.webp" class="glightbox" data-gallery="bus-gallery">
+              <img src="assets/img/gal8.webp" class="img-fluid rounded-4 shadow-sm" alt="Bus 8">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Gallery Section -->
+
 
     <!-- Features Section -->
     <section id="features" class="features section">
@@ -489,7 +568,7 @@
                 </div>
                 <div class="feature-content">
                   <h3>Reservasi Online 24/7</h3>
-                  <p>Pemesanan mudah dan cepat melalui situs kami dengan konfirmasi otomatis dari sistem.</p>
+                  <p>Pemesanan mudah dan cepat melalui WhatsApp kami</p>
                 </div>
               </div>
             </div><!-- End .feature-item -->
@@ -763,6 +842,7 @@
           <ul>
             <li><a href="#hero" class="nav-link" data-target="hero">Beranda</a></li>
             <li><a href="#about" class="nav-link" data-target="about">Tentang Kami</a></li>
+            <li><a href="#gallery" class="nav-link" data-target="gallery">Gallery</a></li>
             <li><a href="#features" class="nav-link" data-target="features">Keunggulan</a></li>
             <li><a href="#services" class="nav-link" data-target="services">Layanan</a></li>
           </ul>
@@ -772,9 +852,12 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>©<span></span><strong class="px-1 sitename">Putra Ardiya</strong><span>2025</span></p>
+      <p>©<span></span><strong class="px-1 sitename animated-gradient">Putra Ardiya</strong>
+        <span>2025</span>
+      </p>
       <div class="credits">
-        Made With ❤️ by <a href="https://www.instagram.com/gery.liam/" target="_blank">Gery Liam</a>
+        Made With ❤️ by <a href="https://www.instagram.com/gery.liam/" class="rgb-animated-text" target="_blank">Gery
+          Liam</a>
       </div>
     </div>
 
@@ -832,6 +915,42 @@
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
+    });
+  </script>
+
+  <script>
+    const text = "Profesional & Nyaman";
+    const typeTarget = document.getElementById("typewriter-text");
+
+    let index = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      if (!isDeleting) {
+        typeTarget.textContent = text.substring(0, index + 1);
+        index++;
+        if (index === text.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 2000); // tunggu 2 detik sebelum mulai menghapus
+          return;
+        }
+      } else {
+        typeTarget.textContent = text.substring(0, index - 1);
+        index--;
+        if (index === 0) {
+          isDeleting = false;
+        }
+      }
+      setTimeout(typeEffect, isDeleting ? 50 : 100); // kecepatan ketik & hapus
+    }
+
+    window.addEventListener("DOMContentLoaded", typeEffect);
+  </script>
+
+  <script>
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      preloader.classList.add("hidden");
     });
   </script>
 
